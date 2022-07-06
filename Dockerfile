@@ -9,6 +9,7 @@ WORKDIR /dbruns
 
 
 RUN mkdir dbout
+RUN mkdir sql
 RUN mkdir out
 # Pull in the database:
 RUN wget https://www.neotomadb.org/uploads/snapshots/neotoma_ndb_latest.tar --no-check-certificate
@@ -18,4 +19,5 @@ RUN gunzip ./dbout/neotoma_ndb_latest.sql.gz
 
 
 COPY src/* /docker-entrypoint-initdb.d/
-COPY sql/* /docker-entrypoint-initdb.d/
+#COPY sql/* /docker-entrypoint-initdb.d/
+COPY sql/* sql/
