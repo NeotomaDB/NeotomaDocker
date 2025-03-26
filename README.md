@@ -1,3 +1,10 @@
+<!-- badges: start -->
+
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-orange.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
+<!-- badges: end -->
+
+
 # Neotoma Docker and Bash utilities
 
 This repository represents a set of utilities, supported by a Docker image of the Neotoma Database.
